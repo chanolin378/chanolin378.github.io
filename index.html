@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Áp dụng kiến thức về SEO để tiến hành SEO cho trang web “Hạt giống cải ngọt ăn bông”</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Thêm FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        
         * {
             margin: 0;
             padding: 0;
@@ -14,16 +13,26 @@
         }
         body {
             display: flex;
+            flex-direction: column;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f5f8fa; 
             color: #333;
         }
+        .container {
+            display: flex;
+            flex: 1;
+            max-width: 1200px;
+            margin: auto;
+        }
         .sidebar {
-            width: 250px;
+            width: 220px;
             background-color: #ffffff;
             border-right: 2px solid #e0e0e0;
-            padding: 20px;
+            padding: 15px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+            height: fit-content; 
+            border-radius: 10px;
         }
         .sidebar h2 {
             background-color: #f48120;
@@ -31,14 +40,14 @@
             padding: 10px;
             border-radius: 5px;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         .sidebar ul {
             list-style-type: none;
         }
         .sidebar ul li {
             margin-bottom: 10px;
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
         .sidebar ul li a {
             text-decoration: none;
@@ -51,23 +60,30 @@
         .sidebar ul li a:hover {
             background-color: #f0f0f0;
         }
+        main {
+            padding: 20px;
+            flex: 1;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
         header {
             background-image: url('background.jpg'); 
             background-size: cover;
             background-position: center;
-            height: 300px;
+            height: 250px;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            flex: 1;
+            margin-bottom: 20px;
+            border-radius: 10px;
         }
         h1 {
             color: #ffffff;
             background-color: rgba(0, 0, 0, 0.5);
             padding: 15px 30px;
             border-radius: 8px;
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
         nav {
             background-color: #ffffff;
@@ -77,7 +93,8 @@
             padding: 15px 0;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             border-bottom: 2px solid #e0e0e0;
-            flex: 1;
+            margin-bottom: 20px;
+            border-radius: 10px;
         }
         nav a {
             color: #333;
@@ -98,25 +115,20 @@
         .icon {
             font-size: 1.2rem;
         }
-        main {
-            padding: 40px;
-            flex: 3;
-        }
         .content-section {
-            margin-bottom: 40px;
-            padding: 30px;
-            background-color: #ffffff;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f8f8f8;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s, box-shadow 0.3s;
         }
         .content-section:hover {
-            transform: translateY(-5px);
+            transform: translateY(-3px);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
         .content-section h2 {
-            margin-bottom: 15px;
-            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
         }
         .content-section p {
             line-height: 1.6;
@@ -128,7 +140,6 @@
             text-align: center;
             padding: 20px;
             margin-top: 20px;
-            flex: 1;
         }
         .social-links a {
             color: #ffffff;
@@ -145,47 +156,49 @@
     </style>
 </head>
 <body>
-    <div class="sidebar">
-        <h2>Danh sách sản phẩm</h2>
-        <ul>
-            <li><a href="#">Hạt giống rau</a></li>
-            <li><a href="#">Hạt giống củ</a></li>
-            <li><a href="#">Hạt giống quả</a></li>
-            <li><a href="#">Hạt giống hoa</a></li>
-            <li><a href="#">Hạt giống rau mầm</a></li>
-            <li><a href="#">Hạt giống cỏ</a></li>
-            <li><a href="#">Hạt giống mini</a></li>
-            <li><a href="#">Hạt giống khổng lồ</a></li>
-            <li><a href="#">Sản phẩm giảm giá</a></li>
-            <li><a href="#">Cây giống - Củ giống</a></li>
-            <li><a href="#">Vật tư - Thuốc - Phân bón</a></li>
-        </ul>
+    <header>
+        <h1>Áp dụng kiến thức về SEO để tiến hành SEO cho trang web “Hạt giống cải ngọt ăn bông”</h1>
+    </header>
+    <nav>
+        <a href="index.html"><span class="icon">🏠</span>Trang chủ</a>
+        <a href="about.html"><span class="icon">ℹ️</span>Giới thiệu</a>
+        <a href="products.html"><span class="icon">🛒</span>Sản phẩm</a>
+        <a href="guide.html"><span class="icon">📝</span>Hướng dẫn mua hàng</a>
+        <a href="contact.html"><span class="icon">📞</span>Liên hệ</a>
+        <a href="news.html"><span class="icon">📰</span>Tin tức</a>
+    </nav>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Danh sách sản phẩm</h2>
+            <ul>
+                <li><a href="#">Hạt giống rau</a></li>
+                <li><a href="#">Hạt giống củ</a></li>
+                <li><a href="#">Hạt giống quả</a></li>
+                <li><a href="#">Hạt giống hoa</a></li>
+                <li><a href="#">Hạt giống rau mầm</a></li>
+                <li><a href="#">Hạt giống cỏ</a></li>
+                <li><a href="#">Hạt giống mini</a></li>
+                <li><a href="#">Hạt giống khổng lồ</a></li>
+                <li><a href="#">Sản phẩm giảm giá</a></li>
+                <li><a href="#">Cây giống - Củ giống</a></li>
+                <li><a href="#">Vật tư - Thuốc - Phân bón</a></li>
+            </ul>
+        </div>
+        <main>
+            <div class="content-section">
+                <h2>Chào mừng đến với trang chính</h2>
+                <p>Nội dung giới thiệu hoặc mô tả trang web của bạn có thể được thêm vào đây. Điều này sẽ giúp khách truy cập hiểu rõ hơn về mục đích của trang web.</p>
+            </div>
+            <div class="content-section">
+                <h2>Thêm nội dung khác</h2>
+                <p>Phần này có thể chứa các bài viết, hình ảnh hoặc thông tin chi tiết khác để làm phong phú trang web của bạn.</p>
+            </div>
+            <div class="content-section">
+                <h2>Liên hệ và thông tin</h2>
+                <p>Phần cuối trang với thông tin liên hệ hoặc liên kết đến các trang mạng xã hội.</p>
+            </div>
+        </main>
     </div>
-    <main>
-        <header>
-            <h1>Áp dụng kiến thức về SEO để tiến hành SEO cho trang web “Hạt giống cải ngọt ăn bông”</h1>
-        </header>
-        <nav>
-            <a href="index.html"><span class="icon">🏠</span>Trang chủ</a>
-            <a href="about.html"><span class="icon">ℹ️</span>Giới thiệu</a>
-            <a href="products.html"><span class="icon">🛒</span>Sản phẩm</a>
-            <a href="guide.html"><span class="icon">📝</span>Hướng dẫn mua hàng</a>
-            <a href="contact.html"><span class="icon">📞</span>Liên hệ</a>
-            <a href="news.html"><span class="icon">📰</span>Tin tức</a>
-        </nav>
-        <div class="content-section">
-            <h2>Chào mừng đến với trang chính</h2>
-            <p>Nội dung giới thiệu hoặc mô tả trang web của bạn có thể được thêm vào đây. Điều này sẽ giúp khách truy cập hiểu rõ hơn về mục đích của trang web.</p>
-        </div>
-        <div class="content-section">
-            <h2>Thêm nội dung khác</h2>
-            <p>Phần này có thể chứa các bài viết, hình ảnh hoặc thông tin chi tiết khác để làm phong phú trang web của bạn.</p>
-        </div>
-        <div class="content-section">
-            <h2>Liên hệ và thông tin</h2>
-            <p>Phần cuối trang với thông tin liên hệ hoặc liên kết đến các trang mạng xã hội.</p>
-        </div>
-    </main>
     <footer>
         <div class="social-links">
             <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
