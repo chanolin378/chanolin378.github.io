@@ -8,14 +8,14 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #eaf4f4; 
+            background-color: #eaf4f4; /* Màu nền xanh nhẹ */
             line-height: 1.6;
         }
         header {
-            background-image: url('background.jpg'); 
+            background-image: url('your-image.jpg'); /* Thay 'your-image.jpg' bằng tên tệp hoặc URL ảnh */
             background-size: cover;
             background-position: center;
-            height: 250px; 
+            height: 250px; /* Giảm chiều cao để thanh tiêu đề sát trên */
             display: flex;
             align-items: flex-end;
             justify-content: center;
@@ -29,7 +29,7 @@
             margin: 0;
         }
         nav {
-            background-color: #3b8d99; 
+            background-color: #3b8d99; /* Màu xanh biển sẫm */
             padding: 10px 0;
             display: flex;
             justify-content: center;
@@ -41,17 +41,23 @@
             font-size: 16px;
             padding: 8px 15px;
             border-radius: 3px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
             transition: background 0.3s;
         }
         nav a:hover {
             background-color: #2e6f75;
+        }
+        .icon {
+            font-size: 18px;
         }
         main {
             padding: 20px;
         }
         .content-section {
             margin: 30px 0;
-            height: 400px; 
+            height: 400px; /* Tạo hiệu ứng cuộn */
             background-color: #d9e7e7;
             border-radius: 10px;
             padding: 20px;
@@ -63,10 +69,12 @@
         <h1>Áp dụng kiến thức về SEO để tiến hành SEO cho trang web “Hạt giống cải ngọt ăn bông”</h1>
     </header>
     <nav>
-        <a href="index.html">🏠 Home</a>
-        <a href="services.html">Services</a>
-        <a href="faq.html">FAQ</a>
-        <a href="about.html">About Us</a>
+        <a href="index.html"><span class="icon">🏠</span>Trang chủ</a>
+        <a href="about.html"><span class="icon">ℹ️</span>Giới thiệu</a>
+        <a href="products.html"><span class="icon">🛒</span>Sản phẩm</a>
+        <a href="guide.html"><span class="icon">📝</span>Hướng dẫn mua hàng</a>
+        <a href="contact.html"><span class="icon">📞</span>Liên hệ</a>
+        <a href="news.html"><span class="icon">📰</span>Tin tức</a>
     </nav>
     <main>
         <div class="content-section">
@@ -74,7 +82,7 @@
             <p>Nội dung giới thiệu hoặc mô tả trang web của bạn có thể được thêm vào đây. Điều này sẽ giúp khách truy cập hiểu rõ hơn về mục đích của trang web.</p>
         </div>
         <div class="content-section">
-            <h2>Nội dung khác</h2>
+            <h2>Thêm nội dung khác</h2>
             <p>Phần này có thể chứa các bài viết, hình ảnh hoặc thông tin chi tiết khác để làm phong phú trang web của bạn.</p>
         </div>
         <div class="content-section">
