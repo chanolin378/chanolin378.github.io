@@ -3,84 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thông tin liên lạc của chúng tôi</title>
+    <title>Giới thiệu về chúng tôi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Thêm FontAwesome -->
     <style>
-        body {
+        * {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #eaf4f4; 
-            line-height: 1.6;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f8fa; /* Màu nền nhẹ */
+            color: #333;
+        }
+        .container {
+            flex: 1;
+            max-width: 1200px;
+            margin: auto;
         }
         header {
             background-image: url('background4.jpg'); 
             background-size: cover;
             background-position: center;
-            height: 250px; 
+            height: 250px;
             display: flex;
-            align-items: flex-end;
+            align-items: center;
             justify-content: center;
-            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            color: white;
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 10px;
-            border-radius: 5px;
-            margin: 0;
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1.8rem;
         }
         nav {
-            background-color: #3b8d99; 
-            padding: 10px 0;
+            background-color: #ffffff;
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 15px;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 20px;
+            border-radius: 10px;
         }
         nav a {
-            color: white;
+            color: #333;
             text-decoration: none;
-            font-size: 16px;
-            padding: 8px 15px;
-            border-radius: 3px;
-            transition: background 0.3s;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.3s, color 0.3s;
         }
         nav a:hover {
-            background-color: #2e6f75;
+            background-color: #3b8d99;
+            color: #ffffff;
+        }
+        .icon {
+            font-size: 1.2rem;
         }
         main {
             padding: 20px;
-        }
-        .content-section {
-            margin: 30px 0;
-            height: 400px; 
-            background-color: #d9e7e7;
+            background-color: #ffffff;
             border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            color: #3b8d99;
+        }
+        .section p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .highlight {
+            background-color: #f0f8ff;
+            border-left: 5px solid #3b8d99;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #3b8d99;
+            color: #ffffff;
+            text-align: center;
             padding: 20px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #ffffff;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #b2e0e2;
+        }
+        footer p {
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Thông tin liên lạc của chúng tôi</h1>
+        <h1>Giới thiệu về chúng tôi</h1>
     </header>
     <nav>
-        <a href="index.html">🏠 Home</a>
-        <a href="services.html">Services</a>
-        <a href="faq.html">FAQ</a>
-        <a href="about.html">About Us</a>
+        <a href="index.html"><span class="icon">🏠</span>Trang chủ</a>
+        <a href="about.html"><span class="icon">ℹ️</span>Giới thiệu</a>
+        <a href="products.html"><span class="icon">🛒</span>Sản phẩm</a>
+        <a href="guide.html"><span class="icon">📝</span>Hướng dẫn mua hàng</a>
+        <a href="contact.html"><span class="icon">📞</span>Liên hệ</a>
+        <a href="news.html"><span class="icon">📰</span>Tin tức</a>
     </nav>
-    <main>
-        <div class="content-section">
-            <h2>Chào mừng đến với trang thông tin liên hệ</h2>
-            <p>Nội dung giới thiệu hoặc mô tả trang web của bạn có thể được thêm vào đây. Điều này sẽ giúp khách truy cập hiểu rõ hơn về mục đích của trang web.</p>
+    <div class="container">
+        <main>
+            <div class="section">
+                <h2>Sứ mệnh của chúng tôi</h2>
+                <p>Chúng tôi cam kết cung cấp các sản phẩm hạt giống cải ngọt ăn bông chất lượng cao, giúp người trồng tiếp cận gần hơn với nông nghiệp bền vững và tự cung tự cấp thực phẩm sạch. Hạt giống cải ngọt ăn bông là lựa chọn lý tưởng để mang lại sức sống xanh cho khu vườn của bạn, với những cây cải ngọt ngào, giàu dinh dưỡng, dễ trồng và chăm sóc.</p>
+            </div>
+            <div class="highlight">
+                <h2>Giá trị của cải ngọt ăn bông</h2>
+                <p>Cải ngọt ăn bông không chỉ là một loại rau phổ biến trong bữa ăn hàng ngày mà còn chứa nhiều vitamin và khoáng chất quan trọng cho sức khỏe như vitamin A, C, và K. Cây cải ngọt dễ trồng và có thể phát triển tốt trong nhiều điều kiện khí hậu khác nhau, giúp mọi người có thể tự tay chăm sóc và thu hoạch rau sạch ngay tại nhà.</p>
+            </div>
+            <div class="section">
+                <h2>Tại sao chọn hạt giống cải ngọt của chúng tôi?</h2>
+                <ul>
+                    <li>Hạt giống được tuyển chọn kỹ lưỡng, đảm bảo tỷ lệ nảy mầm cao.</li>
+                    <li>Phù hợp với nhiều điều kiện trồng khác nhau, từ vườn nhà đến khu vực trồng lớn.</li>
+                    <li>Hỗ trợ và hướng dẫn chi tiết trong quá trình chăm sóc, từ lúc gieo hạt đến khi thu hoạch.</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Cách sử dụng hạt giống cải ngọt</h2>
+                <p>Để trồng cải ngọt ăn bông, bạn chỉ cần làm theo các bước đơn giản: chuẩn bị đất, gieo hạt, tưới nước đều đặn, và đảm bảo cây được chiếu sáng đầy đủ. Chúng tôi cung cấp hướng dẫn chi tiết và mẹo hữu ích để bạn có thể dễ dàng trồng và thu hoạch cải ngọt tại nhà.</p>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
         </div>
-        <div class="content-section">
-            <h2>Thêm nội dung khác</h2>
-            <p>Phần này có thể chứa các bài viết, hình ảnh hoặc thông tin chi tiết khác để làm phong phú trang web của bạn.</p>
-        </div>
-        <div class="content-section">
-            <h2>Liên hệ và thông tin</h2>
-            <p>Phần cuối trang với thông tin liên hệ hoặc liên kết đến các trang mạng xã hội.</p>
-        </div>
-    </main>
+        <p>© 2024 Hạt giống cải ngọt ăn bông. All rights reserved.</p>
+        <p>Design by Chanolin</p>
+    </footer>
 </body>
 </html>
