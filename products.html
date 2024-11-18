@@ -102,42 +102,18 @@
             margin-bottom: 10px;
             color: #333;
         }
-        .product-item button {
+        .product-item a {
+            display: inline-block;
             background-color: #3b8d99;
             color: #ffffff;
-            border: none;
+            text-decoration: none;
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s;
         }
-        .product-item button:hover {
+        .product-item a:hover {
             background-color: #2e6f75;
-        }
-        .notification {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #4caf50;
-            color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-            animation: fadeInOut 1.5s forwards;
-            opacity: 0;
-        }
-        .notification i {
-            margin-bottom: 10px;
-            font-size: 2rem;
-        }
-        @keyframes fadeInOut {
-            0% { opacity: 0; transform: translate(-50%, -50%) scale(0.9); }
-            10% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-            90% { opacity: 1; }
-            100% { opacity: 0; transform: translate(-50%, -50%) scale(0.9); }
         }
         footer {
             background-color: #3b8d99;
@@ -159,15 +135,6 @@
             margin: 10px 0;
         }
     </style>
-    <script>
-        function showNotification() {
-            const notification = document.querySelector('.notification');
-            notification.style.display = 'block';
-            setTimeout(() => {
-                notification.style.display = 'none';
-            }, 1500);
-        }
-    </script>
 </head>
 <body>
     <header>
@@ -184,82 +151,78 @@
     <div class="container">
         <div class="product-grid">
             <div class="product-item">
-                <img src="product1.jpg" alt="Sản phẩm 1">
+                <img src="product1.jpg" alt="Hạt giống cải ngọt">
                 <h3>Hạt giống cải ngọt</h3>
                 <p>Giá: 20,000 VNĐ</p>
-                <button onclick="showNotification()">Mua hàng</button>
+                <a href="product-details.html">Mua hàng</a>
             </div>
             <div class="product-item">
-                <img src="product2.jpg" alt="Sản phẩm 2">
+                <img src="product2.jpg" alt="Hạt giống rau mầm">
                 <h3>Hạt giống rau mầm</h3>
                 <p>Giá: 25,000 VNĐ</p>
-                <button onclick="showNotification()">Mua hàng</button>
+                <a href="product-details.html">Mua hàng</a>
             </div>
             <div class="product-item">
-                <img src="product3.jpg" alt="Sản phẩm 3">
+                <img src="product3.jpg" alt="Hạt giống cải xanh">
                 <h3>Hạt giống cải xanh</h3>
                 <p>Giá: 18,000 VNĐ</p>
-                <button onclick="showNotification()">Mua hàng</button>
+                <a href="product-details.html">Mua hàng</a>
             </div>
             <div class="product-item">
-                <img src="product4.jpg" alt="Sản phẩm 4">
+                <img src="product4.jpg" alt="Hạt giống cải bẹ">
                 <h3>Hạt giống cải bẹ</h3>
                 <p>Giá: 22,000 VNĐ</p>
-                <button onclick="showNotification()">Mua hàng</button>
+                <a href="product-details.html">Mua hàng</a>
             </div>
             <div class="product-item">
-                <img src="product5.jpg" alt="Sản phẩm 5">
+                <img src="product5.jpg" alt="Hạt giống xà lách">
                 <h3>Hạt giống xà lách</h3>
                 <p>Giá: 15,000 VNĐ</p>
-                <button onclick="showNotification()">Mua hàng</button>
+                <a href="product-details.html">Mua hàng</a>
             </div>
             <div class="product-item">
-                <img src="product6.jpg" alt="Sản phẩm 6">
+                <img src="product6.jpg" alt="Hạt giống rau thơm">
                 <h3>Hạt giống rau thơm</h3>
                 <p>Giá: 17,000 VNĐ</p>
-                <button onclick="showNotification()">Mua hàng</button>
+                <a href="product-details.html">Mua hàng</a>
             </div>
             <div class="product-item">
-                <img src="product7.jpg" alt="Sản phẩm 7">
+                <img src="product7.jpg" alt="Hạt giống cải thìa">
                 <h3>Hạt giống cải thìa</h3>
                 <p>Giá: 20,000 VNĐ</p>
-                <button onclick="showNotification()">Mua hàng</button>
+                <a href="product-details.html">Mua hàng</a>
             </div>
             <div class="product-item">
-                <img src="product8.jpg" alt="Sản phẩm 8">
+                <img src="product8.jpg" alt="Hạt giống cải ngọt mini">
                 <h3>Hạt giống cải ngọt mini</h3>
                 <p>Giá: 23,000 VNĐ</p>
-                <button onclick="showNotification()">Mua hàng</button>
+                <a href="product-details.html">Mua hàng</a>
             </div>
             <div class="product-item">
-                <img src="product9.jpg" alt="Sản phẩm 9">
+                <img src="product9.jpg" alt="Hạt giống bắp cải">
                 <h3>Hạt giống bắp cải</h3>
                 <p>Giá: 30,000 VNĐ</p>
-                <button onclick="showNotification()">Mua hàng</button>
+                <a href="product-details.html">Mua hàng</a>
             </div>
             <div class="product-item">
-                <img src="product10.jpg" alt="Sản phẩm 10">
+                <img src="product10.jpg" alt="Hạt giống rau muống">
                 <h3>Hạt giống rau muống</h3>
                 <p>Giá: 12,000 VNĐ</p>
-                <button onclick="showNotification()">Mua hàng</button>
+                <a href="product-details.html">Mua hàng</a>
             </div>
             <div class="product-item">
-                <img src="product11.jpg" alt="Sản phẩm 11">
+                <img src="product11.jpg" alt="Hạt giống rau dền">
                 <h3>Hạt giống rau dền</h3>
                 <p>Giá: 15,000 VNĐ</p>
-                <button onclick="showNotification()">Mua hàng</button>
+                <a href="product-details.html">Mua hàng</a>
             </div>
             <div class="product-item">
-                <img src="product12.jpg" alt="Sản phẩm 12">
+                <img src="product12.jpg" alt="Hạt giống cải xoong">
                 <h3>Hạt giống cải xoong</h3>
                 <p>Giá: 18,000 VNĐ</p>
-                <button onclick="showNotification()">Mua hàng</button>
+                <a href="product-details.html">Mua hàng</a>
             </div>
         </div>
-    </div>
-    <div class="notification">
-        <i class="fas fa-check-circle"></i>
-        <p>Đã mua hàng thành công!</p>
     </div>
     <footer>
         <div class="social-links">
